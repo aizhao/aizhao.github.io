@@ -5,13 +5,13 @@
         <link>http://manmanza.top</link>
         <description></description>
         <language>zh-CN</language>
-        <pubDate>Sat, 21 Oct 2023 20:08:32 +0800</pubDate>
-        <lastBuildDate>Sat, 21 Oct 2023 20:08:32 +0800</lastBuildDate>
+        <pubDate>Sat, 21 Oct 2023 20:12:58 +0800</pubDate>
+        <lastBuildDate>Sat, 21 Oct 2023 20:12:58 +0800</lastBuildDate>
         <item>
-            <guid isPermalink="true">http://manmanza.top/2023/10/21/P3853%20[TJOI2007]%20%E8%B7%AF%E6%A0%87%E8%AE%BE%E7%BD%AE/</guid>
-            <title></title>
-            <link>http://manmanza.top/2023/10/21/P3853%20[TJOI2007]%20%E8%B7%AF%E6%A0%87%E8%AE%BE%E7%BD%AE/</link>
-            <pubDate>Sat, 21 Oct 2023 20:08:32 +0800</pubDate>
+            <guid isPermalink="true">http://manmanza.top/2023/10/21/%E8%B7%AF%E6%A0%87%E8%AE%BE%E7%BD%AE/</guid>
+            <title>路标设置</title>
+            <link>http://manmanza.top/2023/10/21/%E8%B7%AF%E6%A0%87%E8%AE%BE%E7%BD%AE/</link>
+            <pubDate>Sat, 21 Oct 2023 20:12:58 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;p3853-tjoi2007-路标设置&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#p3853-tjoi2007-路标设置&#34;&gt;#&lt;/a&gt; P3853 [TJOI2007] 路标设置&lt;/h1&gt;
 &lt;h5 id=&#34;题意给定一段路的长度n个路标的位置以及你还可以放新的路标的数量定义最远的相邻路标距离为空旷指数要求放置新路标使空旷指数尽可能最小输出最小值&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#题意给定一段路的长度n个路标的位置以及你还可以放新的路标的数量定义最远的相邻路标距离为空旷指数要求放置新路标使空旷指数尽可能最小输出最小值&#34;&gt;#&lt;/a&gt; 题意：给定一段路的长度，N 个路标的位置，以及你还可以放新的路标的数量，定义最远的相邻路标距离为空旷指数，要求放置新路标，使空旷指数尽可能最小，输出最小值。&lt;/h5&gt;
 &lt;h5 id=&#34;题解二分空旷指数x从头遍历数组如果两个路标之间的距离大于x很明显不满足题目要求那么就需要在路标前x处安放一个新路标然后继续检查两个路标之间的距离是否小于x如果不是则继续按要求放新的路标-当用的路标数已经超过了给定路标数则不满足反之则满足&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#题解二分空旷指数x从头遍历数组如果两个路标之间的距离大于x很明显不满足题目要求那么就需要在路标前x处安放一个新路标然后继续检查两个路标之间的距离是否小于x如果不是则继续按要求放新的路标-当用的路标数已经超过了给定路标数则不满足反之则满足&#34;&gt;#&lt;/a&gt; 题解：二分空旷指数 X，从头遍历数组，如果两个路标之间的距离大于 X，很明显不满足题目要求，那么就需要在路标前 X 处安放一个新路标，然后继续检查两个路标之间的距离是否小于 X，如果不是，则继续按要求放新的路标。当用的路标数已经超过了给定路标数，则不满足，反之则满足。&lt;/h5&gt;
@@ -70,13 +70,6 @@ signed main() &amp;#123;
 
 &lt;/code&gt;&lt;/pre&gt;
  ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">http://manmanza.top/2023/10/18/text/</guid>
-            <title>text</title>
-            <link>http://manmanza.top/2023/10/18/text/</link>
-            <pubDate>Wed, 18 Oct 2023 15:37:32 +0800</pubDate>
-            <description><![CDATA[  ]]></description>
         </item>
     </channel>
 </rss>

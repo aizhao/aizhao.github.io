@@ -5,19 +5,11 @@
     "home_page_url": "http://manmanza.top",
     "items": [
         {
-            "id": "http://manmanza.top/2023/10/21/P3853%20[TJOI2007]%20%E8%B7%AF%E6%A0%87%E8%AE%BE%E7%BD%AE/",
-            "url": "http://manmanza.top/2023/10/21/P3853%20[TJOI2007]%20%E8%B7%AF%E6%A0%87%E8%AE%BE%E7%BD%AE/",
-            "title": "",
-            "date_published": "2023-10-21T12:08:32.743Z",
+            "id": "http://manmanza.top/2023/10/21/%E8%B7%AF%E6%A0%87%E8%AE%BE%E7%BD%AE/",
+            "url": "http://manmanza.top/2023/10/21/%E8%B7%AF%E6%A0%87%E8%AE%BE%E7%BD%AE/",
+            "title": "路标设置",
+            "date_published": "2023-10-21T12:12:58.000Z",
             "content_html": "<h1 id=\"p3853-tjoi2007-路标设置\"><a class=\"markdownIt-Anchor\" href=\"#p3853-tjoi2007-路标设置\">#</a> P3853 [TJOI2007] 路标设置</h1>\n<h5 id=\"题意给定一段路的长度n个路标的位置以及你还可以放新的路标的数量定义最远的相邻路标距离为空旷指数要求放置新路标使空旷指数尽可能最小输出最小值\"><a class=\"markdownIt-Anchor\" href=\"#题意给定一段路的长度n个路标的位置以及你还可以放新的路标的数量定义最远的相邻路标距离为空旷指数要求放置新路标使空旷指数尽可能最小输出最小值\">#</a> 题意：给定一段路的长度，N 个路标的位置，以及你还可以放新的路标的数量，定义最远的相邻路标距离为空旷指数，要求放置新路标，使空旷指数尽可能最小，输出最小值。</h5>\n<h5 id=\"题解二分空旷指数x从头遍历数组如果两个路标之间的距离大于x很明显不满足题目要求那么就需要在路标前x处安放一个新路标然后继续检查两个路标之间的距离是否小于x如果不是则继续按要求放新的路标-当用的路标数已经超过了给定路标数则不满足反之则满足\"><a class=\"markdownIt-Anchor\" href=\"#题解二分空旷指数x从头遍历数组如果两个路标之间的距离大于x很明显不满足题目要求那么就需要在路标前x处安放一个新路标然后继续检查两个路标之间的距离是否小于x如果不是则继续按要求放新的路标-当用的路标数已经超过了给定路标数则不满足反之则满足\">#</a> 题解：二分空旷指数 X，从头遍历数组，如果两个路标之间的距离大于 X，很明显不满足题目要求，那么就需要在路标前 X 处安放一个新路标，然后继续检查两个路标之间的距离是否小于 X，如果不是，则继续按要求放新的路标。当用的路标数已经超过了给定路标数，则不满足，反之则满足。</h5>\n<h5 id=\"code\"><a class=\"markdownIt-Anchor\" href=\"#code\">#</a> code：</h5>\n<pre><code class=\"language-c++\">#include &lt;bits/stdc++.h&gt;\nusing namespace std;\n#define int long long\nconst int N = 200010;\nint n, m, k, ans;\nint a[N];\nbool check(int x) &#123;\n  int cnt = 0;//比较的位置\n  int y=k;\n  for (int i = 1; i &lt; m; i++) &#123;\n    if (y &lt; 0) &#123;\n      break;\n    &#125;\n    if (a[i] - cnt &lt;= x)\n      cnt = a[i];\n    else &#123;\n      cnt += x;//比较的X处放置坐标，那么也就是下一次的比较值向后走X米\n      i--;//继续比较新放置位置坐标和刚才的位置距离\n      y--;//次数减1\n    &#125;\n  &#125;\n  if (y &gt;= 0)\n    return 1;\n  return 0;\n&#125;\nvoid solve() &#123;\n  cin &gt;&gt; n &gt;&gt; m &gt;&gt; k;\n  for (int i = 0; i &lt; m; i++)\n    cin &gt;&gt; a[i];\n  int l = 0, r = n;\n  //二分模板\n  while (l &lt; r) &#123;\n    int mid = (l + r) / 2;\n    if (check(mid))&#123;\n      ans=mid;\n      r = mid;\n    &#125;\n    else\n      l = mid + 1;\n  &#125;\n  cout &lt;&lt; l &lt;&lt; '\\n';\n&#125;\nsigned main() &#123;\n  ios::sync_with_stdio(false);\n  int t = 1;\n  // cin &gt;&gt; t;\n  while (t--) &#123;\n    solve();\n  &#125;\n  return 0;\n&#125;\n\n</code></pre>\n",
-            "tags": []
-        },
-        {
-            "id": "http://manmanza.top/2023/10/18/text/",
-            "url": "http://manmanza.top/2023/10/18/text/",
-            "title": "text",
-            "date_published": "2023-10-18T07:37:32.000Z",
-            "content_html": "",
             "tags": []
         }
     ]
